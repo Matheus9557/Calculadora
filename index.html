@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Matheus Gomes" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="resultado"></div>
+      <button id="limpar" class="funcao" onclick="clean()">C</button>
+      <button class="funcao" onclick="insert('/')">/</button>
+
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+      <button onclick="insert('9')">9</button>
+
+      <button class="funcao" onclick="insert('*')">X</button>
+
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+      <button onclick="insert('6')">6</button>
+
+      <button class="funcao" onclick="insert('+')">+</button>
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+      <button onclick="insert('3')">3</button>
+      <button class="funcao" onclick="insert('-')">-</button>
+      <button id="zero" onclick="insert('0')">0</button>
+      <button onclick="insert('.')">.</button>
+      <button class="funcao" onclick="calcular()">=</button>
+    </div>
+  </body>
+</html>
